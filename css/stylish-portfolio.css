@@ -10,6 +10,11 @@ html,
 body {
     width: 100%;
     height: 100%;
+    transition:all .2s linear; 
+    -o-transition:all .2s linear; 
+    -moz-transition:all .2s linear; 
+    -webkit-transition:all .2s linear;
+    font-size: 1em;
 }
 
 body {
@@ -148,94 +153,187 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
+
 /* Header */
 
 .header {
     display: table;
     position: relative;
     width: 100%;
-    height: 100%;
-    background: url(../img/header.jpg) no-repeat center center scroll;
+    height: 100vh;
+    background: url(../img/supreme_pics/header2.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    font-family: 'Pattaya', sans-serif;
 }
+
+.header h1 {
+    top: 0;
+    left: 0;
+    margin: .6em;
+    font-size: 5vh;
+    color: #fff;
+    -webkit-filter: drop-shadow(2px 2px 10px #000);
+    filter: drop-shadow(2px 2px 10px #000);
+}
+
+.header img {
+    float: left;
+    height: 60vh;
+    margin-top: 6em;
+    -webkit-filter: drop-shadow(5px 5px 10px #fff);
+    filter: drop-shadow(5px 5px 10px #fff);
+}
+
+@media screen and (max-width: 500px) {
+    .header img {
+        height: 40vh;
+    }
+}
+
 
 /* About */
 
 .about {
-    padding: 50px 0;
-}
-
-/* Services */
-
-.services {
-    padding: 50px 0;
-}
-
-.service-item {
-    margin-bottom: 30px;
-}
-
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
+    background-color: #162440;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Portfolio */
-
-.portfolio {
     padding: 50px 0;
 }
 
-.portfolio-item {
-    margin-bottom: 30px;
+
+/* Your design here */
+.your_design_here {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
-.img-portfolio {
-    margin: 0 auto;
+
+/* Available Sizes */
+#availableSizes h1 {
+    color: #bd9a56;
+    font-weight: bold;
 }
 
-.img-portfolio:hover {
-    opacity: 0.8;
+.sizes_container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 1em;
 }
 
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
+.card, .card-img-top {
+    width: 40vw;
 }
 
-.call-to-action .btn {
-    margin: 10px;
+.card-text, .card-title {
+    text-align: center;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
+.card-title {
+    color: #162440;
 }
 
-@media(max-width:768px) {
-    .map {
-        height: 75%;
+
+/* Artwork Guidelines */
+#artworkGuidelines {
+    background-color: #dbe3ee;
+}
+
+#artworkGuidelines h1 {
+    color: #bd9a56;
+    font-weight: bold;
+}
+
+.guidelines_img {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.template_container {
+    display: grid;
+    text-decoration: none;
+    justify-content: center;
+}
+
+@media screen and (max-width: 575px) {
+    .template_container {
+        width: 25%;
     }
 }
 
-/*disable custom maps scrolling behaviour*/
-.scrolloff {
-    pointer-events: none;
+.template_icon:hover {
+    transform: scale(1.033);
+    transition: all .2s;
 }
+
+.guideline_cards {
+    display: grid;
+    justify-content: center;
+    background-color: #dbe3ee;
+}
+
+.card-text {
+    padding: 0;
+}
+
+.guideline-card {
+    background-color: #dbe3ee;
+}
+
+
+/* Ink styles */
+#inkStyles h1 {
+    color: #bd9a56;
+    font-weight: bold;
+}
+
+.ink_style_cards {
+    display: grid;
+    justify-content: center;
+}
+
+
+/* Numbering */
+#numbering {
+    background-color: #dbe3ee;
+}
+
+#numbering h1 {
+    color: #bd9a56;
+    font-weight: bold;
+}
+
+.numbering_img {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Quote */
+#quote h1 {
+    color: #bd9a56;
+    font-weight: bold;
+}
+
+.quote_img {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.quote_logo:hover {
+    transform: scale(1.025);
+    transition: all 1s;
+}
+
 
 /* Footer */
 
