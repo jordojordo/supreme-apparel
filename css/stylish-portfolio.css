@@ -214,7 +214,7 @@ hr.small {
 
 /* Available Sizes */
 #availableSizes h1 {
-    color: #bd9a56;
+    color: #162440;
     font-weight: bold;
 }
 
@@ -224,8 +224,9 @@ hr.small {
     margin: 1em;
 }
 
-.card, .card-img-top {
-    width: 40vw;
+
+.sizes_img {
+    border: #fff;
 }
 
 .card-text, .card-title {
@@ -243,7 +244,7 @@ hr.small {
 }
 
 #artworkGuidelines h1 {
-    color: #bd9a56;
+    color: #162440;
     font-weight: bold;
 }
 
@@ -288,7 +289,7 @@ hr.small {
 
 /* Ink styles */
 #inkStyles h1 {
-    color: #bd9a56;
+    color: #162440;
     font-weight: bold;
 }
 
@@ -304,7 +305,7 @@ hr.small {
 }
 
 #numbering h1 {
-    color: #bd9a56;
+    color: #162440;
     font-weight: bold;
 }
 
@@ -318,7 +319,7 @@ hr.small {
 
 /* Quote */
 #quote h1 {
-    color: #bd9a56;
+    color: #162440;
     font-weight: bold;
 }
 
