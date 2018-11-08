@@ -329,6 +329,11 @@ hr.small {
     height: auto;
 }
 
+.quote_me_container {
+    display: grid;
+    justify-content: center;
+}
+
 .quote_logo:hover {
     transform: scale(1.025);
     transition: all 1s;
@@ -336,7 +341,10 @@ hr.small {
 
 
 /* Footer */
-
-footer {
-    padding: 100px 0;
+.contact_img {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 1.5em;
 }
